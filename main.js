@@ -1,0 +1,1 @@
+document.body.appendChild(function(){const e=document.createElement("p");return e.textContent="Hello World Test",e}());
