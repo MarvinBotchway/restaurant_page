@@ -2,9 +2,12 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 body {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 button {
@@ -29,5 +32,21 @@ header {
 }
 
 #content {
-  padding: 1rem;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: orange;
+  overflow: hidden;
+}
+#action-txt {
+  margin: auto;
+  height: fit-content;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
 }
