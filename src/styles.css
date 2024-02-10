@@ -10,6 +10,19 @@ body {
   background-color: white;
 }
 
+h3 {
+  margin: 1.5rem;
+  font-size: xx-large;
+}
+p {
+  font-size: x-large;
+}
+li {
+  margin-top: 0.5rem;
+  font-size: x-large;
+  list-style: none;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -34,12 +47,27 @@ header {
 #content {
 }
 
-#home {
+.container {
   display: flex;
   justify-content: center;
   height: 100vh;
   background-color: orange;
   overflow: hidden;
+  padding: 3rem;
+  border-bottom: 6px rgba(250, 128, 114, 0.082) solid;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  background-color: white;
+}
+.about {
+  display: block;
+  text-align: center;
+  background-color: white;
+}
+#about {
 }
 #action-txt {
   margin: auto;
