@@ -34,7 +34,10 @@ button {
 button:hover {
   border-bottom: 2px solid black;
 }
-
+img {
+  width: 50%;
+  border-radius: 12px;
+}
 header {
   display: flex;
   background-color: white;
@@ -51,30 +54,64 @@ header {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: orange;
   overflow: hidden;
   padding: 3rem;
-  border-bottom: 6px rgba(250, 128, 114, 0.082) solid;
+  border-bottom: 4px whitesmoke solid;
 }
 
 .menu {
   display: block;
   text-align: center;
   background-color: white;
+  height: fit-content;
 }
 .about {
   display: block;
   text-align: center;
   background-color: white;
+  height: fit-content;
 }
+
+#home {
+  background: url("./images/hero.jpg");
+  background-size: cover;
+}
+
+h2 {
+  color: rgb(206, 229, 255);
+}
+
 #about {
 }
+
 #action-txt {
   margin: auto;
   height: fit-content;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.452);
+  border: 2px solid rgb(206, 229, 255);
 }
 
 h1 {
   font-size: 3.5rem;
   color: white;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-section {
+  margin-top: 2.5rem;
+}
+
+.menu-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 12px;
+  width: 100%;
 }
