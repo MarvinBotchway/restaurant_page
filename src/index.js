@@ -1,5 +1,4 @@
 import "./styles.css";
-import "./index.html";
 import "./images/hero.jpg";
 import "./images/staff.jpg";
 import Home from "./modules/home.js";
