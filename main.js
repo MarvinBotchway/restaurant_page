@@ -50,26 +50,6 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./src/index.html":
-/*!************************!*\
-  !*** ./src/index.html ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./index.js */ \"./src/index.js?dfde\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar code = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <title>Document</title>\\n  </head>\\n  <body>\\n    <header>\\n      <p>SC</p>\\n      <nav>\\n        <button id=\\\"home-btn\\\">Home</button>\\n        <button id=\\\"menu-btn\\\">Menu</button>\\n        <button id=\\\"about-btn\\\">About</button>\\n      </nav>\\n    </header>\\n    <div id=\\\"content\\\"></div>\\n    <\" + \"script type=\\\"module\\\" src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\"><\" + \"/script>\\n  </body>\\n</html>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://restaurant_page/./src/index.html?");
-
-/***/ }),
-
-/***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
-  \*********************************************************/
-/***/ ((module) => {
-
-eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n\n  // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n  url = String(url.__esModule ? url.default : url);\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  }\n  if (options.maybeNeedQuotes && /[\\t\\n\\f\\r \"'=<>`]/.test(url)) {\n    return \"\\\"\".concat(url, \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://restaurant_page/./node_modules/html-loader/dist/runtime/getUrl.js?");
-
-/***/ }),
-
 /***/ "./src/styles.css":
 /*!************************!*\
   !*** ./src/styles.css ***!
@@ -140,13 +120,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/index.js?b635":
+/***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ \"./src/index.html\");\n/* harmony import */ var _images_hero_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/hero.jpg */ \"./src/images/hero.jpg\");\n/* harmony import */ var _images_staff_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/staff.jpg */ \"./src/images/staff.jpg\");\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n/* harmony import */ var _modules_about_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/about.js */ \"./src/modules/about.js\");\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/modules/menu.js\");\n\n\n\n\n\n\n\n\nconst content = document.getElementById(\"content\");\nconst homeBtn = document.getElementById(\"home-btn\");\nconst aboutBtn = document.getElementById(\"about-btn\");\nconst menuBtn = document.getElementById(\"menu-btn\");\n\ncontent.appendChild(_modules_home_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n\nhomeBtn.addEventListener(\"click\", () => showContent(\"homeBtn\"));\naboutBtn.addEventListener(\"click\", () => showContent(\"aboutBtn\"));\nmenuBtn.addEventListener(\"click\", () => showContent(\"menuBtn\"));\n\nfunction showContent(currentTab) {\n  while (content.lastChild) {\n    content.removeChild(content.lastChild);\n  }\n  if (currentTab == \"homeBtn\") content.appendChild(_modules_home_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n  else if (currentTab == \"aboutBtn\") content.appendChild(_modules_about_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n  else if (currentTab == \"menuBtn\") content.appendChild(_modules_menu_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\n}\n\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _images_hero_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/hero.jpg */ \"./src/images/hero.jpg\");\n/* harmony import */ var _images_staff_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/staff.jpg */ \"./src/images/staff.jpg\");\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n/* harmony import */ var _modules_about_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/about.js */ \"./src/modules/about.js\");\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/modules/menu.js\");\n\n// import \"./index.html\";\n\n\n\n\n\n\nconst content = document.getElementById(\"content\");\nconst homeBtn = document.getElementById(\"home-btn\");\nconst aboutBtn = document.getElementById(\"about-btn\");\nconst menuBtn = document.getElementById(\"menu-btn\");\n\ncontent.appendChild(_modules_home_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n\nhomeBtn.addEventListener(\"click\", () => showContent(\"homeBtn\"));\naboutBtn.addEventListener(\"click\", () => showContent(\"aboutBtn\"));\nmenuBtn.addEventListener(\"click\", () => showContent(\"menuBtn\"));\n\nfunction showContent(currentTab) {\n  while (content.lastChild) {\n    content.removeChild(content.lastChild);\n  }\n  if (currentTab == \"homeBtn\") content.appendChild(_modules_home_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n  else if (currentTab == \"aboutBtn\") content.appendChild(_modules_about_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n  else if (currentTab == \"menuBtn\") content.appendChild(_modules_menu_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n}\n\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
 
 /***/ }),
 
@@ -207,16 +187,6 @@ eval("module.exports = __webpack_require__.p + \"c3175259f791c6200b25.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"895dae665580f3f90d72.jpg\";\n\n//# sourceURL=webpack://restaurant_page/./src/images/staff.jpg?");
-
-/***/ }),
-
-/***/ "./src/index.js?dfde":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"ce1d2d7b486891d21327.js\";\n\n//# sourceURL=webpack://restaurant_page/./src/index.js?");
 
 /***/ })
 
@@ -361,7 +331,7 @@ eval("module.exports = __webpack_require__.p + \"ce1d2d7b486891d21327.js\";\n\n/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js?b635");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;
